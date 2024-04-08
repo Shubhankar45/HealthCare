@@ -327,7 +327,7 @@ body {
 
 .links a {
     color: #fff;
-    background-color: #007bff;
+    background-color: #4CAF50;
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0 10px;
@@ -336,7 +336,7 @@ body {
 }
 
 .links a:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
 .set-appointment h2 {
