@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-hospital"></i>Health Care</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointments</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="menu-button" class="fas fa-bars"></div>
+    </header>
+
+    <div class="main-content">
+        <div class="welcome-message">
+            <h1>Welcome to Our Hospital</h1>
+            <p>Providing quality healthcare services since 1990.</p>
+        </div>
+
+        <div class="services">
+            <div class="service">
+                <i class="fas fa-user-md"></i>
+                <h2>Expert Doctors</h2>
+                <p>Experienced and highly skilled doctors.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-notes-medical"></i>
+                <h2>Comprehensive Services</h2>
+                <p>Wide range of medical services available.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-ambulance"></i>
+                <h2>24/7 Emergency</h2>
+                <p>Emergency services available round the clock.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-hospital-user"></i>
+                <h2>Patient Care</h2>
+                <p>Compassionate and personalized care.</p>
+            </div>
+        </div>
+
+
+        <div class="section doctors" id="doctors">
+            <h2>Our Doctors</h2>
+            <div class="doctor-cards">
+                <div class="doctor-card">
+                    <img src="doctor1.jpg" alt="Doctor 1">
+                    <h3>Dr. John Doe</h3>
+                    <p>Cardiologist</p>
+                    <p>Experience: 10 years</p>
+                    <p>Specialization: Heart diseases</p>
+                    <button>Book Appointment</button>
+                </div>
+                <div class="doctor-card">
+                    <img src="doctor2.jpg" alt="Doctor 2">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Neurologist</p>
+                    <p>Experience: 8 years</p>
+                    <p>Specialization: Brain disorders</p>
+                    <button>Book Appointment</button>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor2.jpg" alt="Doctor 2">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Neurologist</p>
+                    <p>Experience: 8 years</p>
+                    <p>Specialization: Brain disorders</p>
+                    <button>Book Appointment</button>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor2.jpg" alt="Doctor 2">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Neurologist</p>
+                    <p>Experience: 8 years</p>
+                    <p>Specialization: Brain disorders</p>
+                    <button>Book Appointment</button>
+                </div>
+
+                <!-- Add more doctor cards here -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section set-appointment" id="appointment">
+        <h2>Book Appointment</h2>
+        <p>Schedule an appointment with our doctors online for a convenient and hassle-free experience.</p>
+        <div class="form-container">
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="section our-services" id="services">
+        <h2>Our Services</h2>
+        <p>Discover the services we offer to ensure your well-being.</p>
+        <div class="services-container">
+            <div class="service">
+                <i class="fas fa-user-md"></i>
+                <h3>Expert Medical Consultation</h3>
+                <p>Receive personalized medical consultation from our experienced doctors.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-hospital"></i>
+                <h3>State-of-the-Art Facilities</h3>
+                <p>Access to modern medical facilities equipped with the latest technology.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Comprehensive Health Checkups</h3>
+                <p>Get thorough health checkups to monitor and maintain your well-being.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-pills"></i>
+                <h3>Medication Management</h3>
+                <p>Receive expert advice on medication management and prescriptions.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-notes-medical"></i>
+                <h3>Medical Records Management</h3>
+                <p>Efficient management of medical records for easy access and retrieval.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-ambulance"></i>
+                <h3>Emergency Medical Assistance</h3>
+                <p>24/7 emergency medical assistance to address urgent health concerns.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any inquiries, feedback, or assistance. We're here to help!</p>
+        <!-- Content for contact us section -->
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@example.com</p>
+            </div>
+        </div>
+        <div class="links">
+            <a href="#">Visit Us</a>
+            <a href="#">Call Us</a>
+            <a href="#">Email Us</a>
+        </div>
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Hospital Management. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

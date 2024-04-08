@@ -1,0 +1,350 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#menu-button {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #4CAF50;
+        padding: 20px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    #menu-button {
+        display: block;
+    }
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.service i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles for links */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.doctors {
+    text-align: center;
+}
+
+.set-appointment {
+    text-align: center;
+}
+
+.our-services {
+    text-align: center;
+}
+
+.contact-us {
+    text-align: center;
+}
+
+/* CSS for Doctor Cards */
+
+.doctors {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.doctors h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.doctor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doctor-card {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    margin-bottom: 5px;
+}
+
+.doctor-card button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.doctor-card button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the Our Services section */
+.our-services {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.our-services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--green);
+    /* Assuming you have a variable for green color */
+}
+
+.our-services p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    width: 300px;
+    margin: 0 20px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service i {
+    font-size: 2.5rem;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.section.contact-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section.contact-us h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section.contact-us p {
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+}
+
+.set-appointment h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
