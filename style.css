@@ -66,11 +66,13 @@ body {
 
 .main-content {
     padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .welcome-message {
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 .services {
