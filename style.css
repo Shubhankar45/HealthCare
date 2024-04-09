@@ -250,7 +250,7 @@ body {
 /* Styling for the Our Services section */
 .our-services {
     text-align: center;
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 .our-services h2 {
