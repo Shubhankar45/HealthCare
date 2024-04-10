@@ -350,3 +350,12 @@ body {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+.service button{
+   padding: 15px;
+   background-color:#4CAF50;
+   color: #f2f2f2;
+   border: none;
+   border-radius: 5px;
+   font-weight: 600;
+
+}
