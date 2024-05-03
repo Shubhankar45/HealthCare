@@ -1,22 +1,8 @@
-import mongoose from "mongoose"
+import connectDB from "../src/db/index"
+import donenv  from "dotenv"
 
-(async()=>{
-try{
+configDotenv.config({
+    path:"./.env"
+})
 
-
-
-
-
-
-
-}
-
-catch(error){
-    console.log("Error Occured ",error)
-    throw error;
-}
-
-
-
-
-})()
+connectDB()
